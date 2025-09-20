@@ -1,3 +1,11 @@
+'''
+!!CREDITS!!
+Author: Rosana Khong (@UnwakingOblivion)
+Date: 21st September 2025
+Project: NUS ES2002 G21
+Description: Web Scraper for Shaw Theatres to collect movie & seat info, using python & selenium
+'''
+
 from zoneinfo import ZoneInfo
 from datetime import datetime
 
@@ -12,13 +20,13 @@ import schedule
 import time
 
 shaw_theatres = {  # 7 theatres
-    # "Lido":"1",  # shit still under maintainance
+    # "Lido":"1",  # theatre still under maintainance as of 21/09/2025
     "Balestiar":"3",
-    # "Jewel":"8",
-    # "Paya Lebar":"9",
-    # "Waterway Point": "7",
-    # "Nex":"5", 
-    # "Lot One":"4",
+    "Jewel":"8",
+    "Paya Lebar":"9",
+    "Waterway Point": "7",
+    "Nex":"5", 
+    "Lot One":"4",
     }
 
 def scrape_data():
@@ -237,4 +245,5 @@ while True:
         print("10 mins passed! Running data scraper...")
         timer += 10
     time.sleep(60)
+
 
